@@ -1,0 +1,13 @@
+{
+    "domain": "nvenergy",
+    "name": "NV Energy Thermostat",
+    "documentation": "https://www.home-assistant.io/integrations/nvenergy",
+    "issue_tracker": "https://github.com/vegascom-jeff/nvenergy/issues"
+	"requirements": ["requests", "cryptography"],
+    "dependencies": [],
+    "codeowners": [
+      "@vegascom-jeff"
+    ],
+    "iot_class": "cloud_polling",
+    "version":"0.1"
+  }
