@@ -25,40 +25,6 @@ climate:
     password: "password goes here"
 ```
 
-## Optional Config: Thermostat Names
-
-The integration will pull a name from the NV Energy web interface. If you wish to change the provide name you can add parameters to your `configuration.yaml` entry.
-
-If you have a single thermostat, add a `name:` parameter:
-
-```
-climate:
-  - platform: nvenergy
-    username: "sample@user.com"
-    password: "password goes here"
-	name: "My Thermostat"
-```
-
-If you have multiple thermostats you will need to run the interface letting it retrieve the default names, you will lookup the thermostat ID, then adjust the config to set
-the thermostat names for the specific thermostat IDs.
-
-To lookup thermostat IDs:
-1. Follow the installation instructions so the integration is working.
-2. Login to Home Assistant and select `Developer Tools` on the left menu.
-3. Under `Current Entities` > `Filter entities` type: `climate`
-4. Under `Attributes` for the listed climate entities, find and record `nve_thermostat_id`.
-
-Once you have the thermostat ID's you can assign a name to the specific thermostat ID in `configuration.yaml`. Add `name_<thermostat id>`:
-
-```
-climate:
-  - platform: nvenergy
-    username: "sample@user.com"
-    password: "password goes here"
-	name_12345: "Thermostat One"
-	name_67890: "Thermostat Two"
-```
-
 ## Limitations
 
 1. Supports multiple thermostats but only a single location.
