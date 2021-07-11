@@ -2,7 +2,7 @@
     "domain": "nvenergy",
     "name": "NV Energy Thermostat",
     "documentation": "https://github.com/vegascom-jeff/nvenergy/",
-    "issue_tracker": "https://github.com/vegascom-jeff/nvenergy/issues"
+    "issue_tracker": "https://github.com/vegascom-jeff/nvenergy/issues",
 	"requirements": ["requests", "cryptography"],
     "dependencies": [],
     "codeowners": [
