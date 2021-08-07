@@ -69,6 +69,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     nve_thermostats = []
 
     for thermostat_id in thermostat_ids:
+        simple_thermostat = client.createThermostat(thermostat_id)
         nve_thermostat = NVEThermostat(simple_thermostat)
         nve_thermostats.append(nve_thermostat)
 
